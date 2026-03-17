@@ -37,7 +37,7 @@ A modern, full-stack SaaS-style application for uploading PDF files, generating 
 ## Tech Stack
 
 - **Frontend:** React (Vite), modular components, modern CSS-in-JS styling
-- **Backend:** FastAPI, PyPDF2, Ollama (Llama2), keyword-based search (BM25)
+- **Backend:** FastAPI, Neo4j, Ollama (Llama2), graph-based retrieval
 - **AI Integration:** Local LLM via Ollama for summarization and Q&A
 
 ---
