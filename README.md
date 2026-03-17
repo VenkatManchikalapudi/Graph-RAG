@@ -14,11 +14,11 @@ See `architecture.md` for a full diagram and flow.
 - Backend: FastAPI, persistent summary cache (shelve), in-memory Q&A cache
 - Frontend: React (Vite), modular, multi-column UI
 - Ollama (Llama2) for agentic summarization and Q&A
-- **Vectorless Retrieval:** Keyword-based search for context retrieval using BM25
+- **Graph-Based Retrieval:** Context retrieval using Neo4j and Cypher queries
 
 ---
 
-A modern, full-stack SaaS-style application for uploading PDF files, generating AI-powered summaries, and performing Q&A on document content. Built with FastAPI (Python) for the backend and React (Vite) for the frontend. Integrates with local LLMs (Ollama, Llama2) for agentic summarization and question answering. Now uses a **vectorless retrieval mechanism** with keyword-based search for efficient context retrieval.
+A modern, full-stack SaaS-style application for uploading PDF files, generating AI-powered summaries, and performing Q&A on document content. Built with FastAPI (Python) for the backend and React (Vite) for the frontend. Integrates with local LLMs (Ollama, Llama2) for agentic summarization and question answering. Now uses a **graph-based retrieval mechanism** for efficient context retrieval.
 
 ---
 
