@@ -1,0 +1,135 @@
+# Graph RAG System  Architecture Diagram
+
+Below is an ASCII diagram representing the high-level flow of the Graph RAG System:
+
+```
++-------------------+         +-------------------+         +-------------------+
+|                   |         |                   |         |                   |
+|     Frontend      | <-----> |     FastAPI       | <-----> |    Ollama AI      |
+|   (React, Vite)   |  REST   |   Backend API     |  HTTP   |  (Summarization,  |
+|                   |         |                   |         |     Q&A)          |
++-------------------+         +-------------------+         +-------------------+
+         |                             |                             |
+         |                             |                             |
+         v                             v                             |
++-------------------+         +-------------------+                 |
+|                   |         |                   |                 |
+|   User Uploads    |         |  Graph Database   |                 |
+|      Data         |         |  (Neo4j)          |                 |
+|                   |         |                   |                 |
++-------------------+         +-------------------+                 |
+         |                             |                             |
+         |                             v                             |
+         |                   +-------------------+                  |
+         |                   |                   |                  |
+         |                   |   Graph Query     |                  |
+         |                   |   (Cypher)        |                  |
+         |                   |                   |                  |
+         |                   +-------------------+                  |
+         |                             |                             |
+         |                             v                             |
+         |                   +-------------------+                  |
+         |                   |                   |                  |
+         |                   |   Context         |                  |
+         |                   |   Retrieval       |                  |
+         |                   |                   |                  |
+         |                   +-------------------+                  |
+         |                             |                             |
+         |                             v                             |
+         |                   +-------------------+                  |
+         |                   |                   |                  |
+         |                   |   RAG Pipeline    |                  |
+         |                   |                   |                  |
+         |                   |                   |                  |
+         |                   +-------------------+                  |
+         |                             |                             |
+         |                             v                             |
+         |                   +-------------------+                  |
+         |                   |                   |                  |
+         |                   |   Response        |                  |
+         |                   |   Generation      |                  |
+         |                   |                   |                  |
+         |                   +-------------------+                  |
+         |                             |                             |
+         |                             v                             |
+         |                   +-------------------+                  |
+         |                   |                   |                  |
+         |                   |   User View       |                  |
+         |                   |                   |                  |
+         |                   |                   |                  |
+         |                   +-------------------+                  |
+```
+````
+This is the description of what the code block changes:
+<changeDescription>
+Updated the architecture flow diagram to reflect the new Graph RAG system design.
+</changeDescription>
+
+This is the code block that represents the suggested code change:
+````plaintext
+# Graph RAG System  Architecture Diagram
+
+Below is an ASCII diagram representing the high-level flow of the Graph RAG System:
+
+```
++-------------------+         +-------------------+         +-------------------+
+|                   |         |                   |         |                   |
+|     Frontend      | <-----> |     FastAPI       | <-----> |    Ollama AI      |
+|   (React, Vite)   |  REST   |   Backend API     |  HTTP   |  (Summarization,  |
+|                   |         |                   |         |     Q&A)          |
++-------------------+         +-------------------+         +-------------------+
+         |                             |                             |
+         |                             |                             |
+         v                             v                             |
++-------------------+         +-------------------+                 |
+|                   |         |                   |                 |
+|   User Uploads    |         |  Graph Database   |                 |
+|      Data         |         |  (Neo4j)          |                 |
+|                   |         |                   |                 |
++-------------------+         +-------------------+                 |
+         |                             |                             |
+         |                             v                             |
+         |                   +-------------------+                  |
+         |                   |                   |                  |
+         |                   |   Graph Query     |                  |
+         |                   |   (Cypher)        |                  |
+         |                   |                   |                  |
+         |                   +-------------------+                  |
+         |                             |                             |
+         |                             v                             |
+         |                   +-------------------+                  |
+         |                   |                   |                  |
+         |                   |   Context         |                  |
+         |                   |   Retrieval       |                  |
+         |                   |                   |                  |
+         |                   +-------------------+                  |
+         |                             |                             |
+         |                             v                             |
+         |                   +-------------------+                  |
+         |                   |                   |                  |
+         |                   |   RAG Pipeline    |                  |
+         |                   |                   |                  |
+         |                   |                   |                  |
+         |                   +-------------------+                  |
+         |                             |                             |
+         |                             v                             |
+         |                   +-------------------+                  |
+         |                   |                   |                  |
+         |                   |   Response        |                  |
+         |                   |   Generation      |                  |
+         |                   |                   |                  |
+         |                   +-------------------+                  |
+         |                             |                             |
+         |                             v                             |
+         |                   +-------------------+                  |
+         |                   |                   |                  |
+         |                   |   User View       |                  |
+         |                   |                   |                  |
+         |                   |                   |                  |
+         |                   +-------------------+                  |
+```
+````
+This is the description of what the code block changes:
+<changeDescription>
+Updated the architecture flow diagram to reflect the new Graph RAG system design.
+</changeDescription>
